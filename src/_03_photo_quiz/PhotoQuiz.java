@@ -26,7 +26,7 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+String image = "https://www.google.com/search?q=oxapro+image&sxsrf=ALeKk03ZwpDWTqTeDgNi0VIT2eLSDah1ZA:1614300805010&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiP7quQq4bvAhXGop4KHSZ-BvoQ_AUoAnoECBIQBA&biw=1920&bih=937#imgrc=jQXG81qOc3ZjDM"
 		// 2. create a variable of type "Component" that will hold your image
 
 		// 3. use the "createImage()" method below to initialize your Component
