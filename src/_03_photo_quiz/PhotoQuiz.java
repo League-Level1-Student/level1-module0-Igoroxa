@@ -26,35 +26,47 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-String image = "https://www.google.com/search?q=oxapro+image&sxsrf=ALeKk03ZwpDWTqTeDgNi0VIT2eLSDah1ZA:1614300805010&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiP7quQq4bvAhXGop4KHSZ-BvoQ_AUoAnoECBIQBA&biw=1920&bih=937#imgrc=jQXG81qOc3ZjDM"
+		String image = "https://blog.hubspot.com/hubfs/image8-2.jpg";
 		// 2. create a variable of type "Component" that will hold your image
 
 		// 3. use the "createImage()" method below to initialize your Component
-
+		Component imageComp = createImage(image);
 		// 4. add the image to the quiz window
-
+quizWindow.add(imageComp);
 		// 5. call the pack() method on the quiz window
-
+quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+String question = JOptionPane.showInputDialog("Is this a logo?");
 		// 7. print "CORRECT" if the user gave the right answer
-
+if (question.equalsIgnoreCase("yes")) {
+	JOptionPane.showMessageDialog(null, "You got it correct");
+}
 		// 8. print "INCORRECT" if the answer is wrong
-
+else {
+	JOptionPane.showMessageDialog(null, "Incorrect");
+}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+quizWindow.remove(imageComp);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+String imagetwo = "https://i.pinimg.com/originals/de/1c/91/de1c91788be0d791135736995109272a.png";
+Component imageComptwo = createImage(imagetwo);
 		// 11. add the second image to the quiz window
 
+quizWindow.add(imageComptwo);
 		// 12. pack the quiz window
-
+quizWindow.pack();
 		// 13. ask another question
-
+String two = JOptionPane.showInputDialog("Is this the youtube logo?");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+if (two.equalsIgnoreCase("yes")) {
+	JOptionPane.showMessageDialog(null, "You got it correct");
+}
+		
+else {
+	JOptionPane.showMessageDialog(null, "Incorrect");
+}
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
